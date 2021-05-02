@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" == "-h" ]; then
+	echo numpages trials
+fi
+
+./tlb "$1" "$2"
+
+./plot_tlb.py results.txt

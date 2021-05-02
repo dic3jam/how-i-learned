@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main ()
+{
+int x = 0, y = 0;
+char array[4][4];
+
+	for(x=0;x<4;x++)
+	{
+		printf("\n");
+
+		for(y=o;y<4;y++)
+		{
+			if((y%2)==1)
+				array[x][y] = 'X';
+			else
+				array[x][y] = ' ';
+
+			printf("%c", &array[x][y]);
+		}
+	}
+}
+

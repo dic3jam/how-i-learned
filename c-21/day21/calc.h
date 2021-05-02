@@ -1,0 +1,6 @@
+
+
+
+long sqr (int x);
+
+

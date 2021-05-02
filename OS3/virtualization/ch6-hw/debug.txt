@@ -1,0 +1,42 @@
+Reading symbols from ./cntxt...
+Undefined catch command: "cntxt.c".  Try "help catch".
+Breakpoint 1 at 0x1364: file cntxt.c, line 42.
+Starting program: /home/dic3jam/Desktop/notebook/OS3/virtualization/ch6-hw/cntxt 
+[Detaching after fork from child process 13644]
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffdc68) at cntxt.c:42
+42			write(fd2[1], &m, sizeof(int)); 
+43			for(int i = 0; i < RUNS; i++){
+44				int k = 0;
+Hardware watchpoint 2: i
+45				int j = i;
+46				read(fd2[0], &k, sizeof(int));
+47				printf("Parent receives back %d\n", k);
+48				write(fd1[1], &j, sizeof(int));
+49				printf("Parent sends %d\n", j);
+50				wait(NULL);
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7e9fdba in __GI___wait4 (pid=-1, stat_loc=0x0, options=0, 
+    usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:27
+27	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory.
+Reading symbols from ./cntxt...
+Breakpoint 1 at 0x1364: file cntxt.c, line 42.
+Starting program: /home/dic3jam/Desktop/notebook/OS3/virtualization/ch6-hw/cntxt 
+[Detaching after fork from child process 14460]
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffdc68) at cntxt.c:42
+42			write(fd2[1], &m, sizeof(int)); 
+43			for(int i = 0; i < RUNS; i++){
+44				int k = 0;
+45				int j = i;
+46				read(fd2[0], &k, sizeof(int));
+47				printf("Parent receives back %d\n", k);
+48				write(fd1[1], &j, sizeof(int));
+49				wait(NULL);
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7e9fdba in __GI___wait4 (pid=-1, stat_loc=0x0, options=0, 
+    usage=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:27
+27	../sysdeps/unix/sysv/linux/wait4.c: No such file or directory.
+Reading symbols from ./cntxt...
